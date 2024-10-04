@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Produk Kami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        .mobile-menu {
+          display: none;
+        }
+        .mobile-menu.active {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center p-4 px-6 lg:px-8"
+      >
+        <div class="text-3xl font-bold text-blue-600">SUNNYcorp</div>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#beranda"
+            class="text-gray-600 hover:text-blue-500 transition font-medium"
+            >Beranda</a
+          >
+          <a
+            href="#fitur"
+            class="text-gray-600 hover:text-blue-500 transition font-medium"
+            >Fitur</a
+          >
+          <a
+            href="#testimoni"
+            class="text-gray-600 hover:text-blue-500 transition font-medium"
+            >Testimoni</a
+          >
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="mobile-menu bg-white p-4 md:hidden">
+        <a href="#beranda" class="block py-2 hover:text-blue-500 transition"
+          >Beranda</a
+        >
+        <a href="#fitur" class="block py-2 hover:text-blue-500 transition"
+          >Fitur</a
+        >
+        <a href="#testimoni" class="block py-2 hover:text-blue-500 transition"
+          >Testimoni</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-32"
+      id="beranda"
+    >
+      <div class="max-w-6xl mx-auto text-center px-6 lg:px-8">
+        <h1 class="text-5xl font-bold mb-6">Selamat Datang di Produk Kami</h1>
+        <p class="text-xl mb-10 max-w-2xl mx-auto">
+          Kami menyediakan solusi inovatif untuk kebutuhan bisnis Anda
+        </p>
+        <button
+          class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition transform hover:scale-105 duration-200 shadow-lg"
+        >
+          Mulai Sekarang
+        </button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-white" id="fitur">
+      <div class="max-w-6xl mx-auto text-center mb-16 px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-gray-800">Fitur Unggulan</h2>
+        <p class="text-xl text-gray-600 mt-4 max-w-2xl mx-auto">
+          Temukan bagaimana produk kami dapat meningkatkan produktivitas Anda
+        </p>
+      </div>
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 lg:px-8"
+      >
+        <div
+          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+        >
+          <div class="text-4xl mb-6 text-blue-500">🚀</div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">Efisiensi</h3>
+          <p class="text-gray-600">
+            Tingkatkan efisiensi kerja Anda dengan fitur inovatif kami.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+        >
+          <div class="text-4xl mb-6 text-blue-500">🛠️</div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">Powerful</h3>
+          <p class="text-gray-600">
+            Alat yang powerful untuk membantu Anda mencapai tujuan.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+        >
+          <div class="text-4xl mb-6 text-blue-500">🔒</div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">Keamanan</h3>
+          <p class="text-gray-600">
+            Keamanan terbaik untuk melindungi data penting Anda.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-100 py-24" id="testimoni">
+      <div class="max-w-6xl mx-auto text-center mb-16 px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-gray-800">Apa Kata Mereka</h2>
+        <p class="text-xl text-gray-600 mt-4 max-w-2xl mx-auto">
+          Dengarkan pengalaman langsung dari pengguna kami
+        </p>
+      </div>
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 lg:px-8"
+      >
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-600 mb-6">
+            "Produk ini benar-benar mengubah cara saya bekerja. Sangat
+            direkomendasikan!"
+          </p>
+          <div class="flex items-center">
+            <img
+              src="img/ismail.png"
+              width="80px"
+              alt="Pengguna Satu"
+              class="rounded-full mr-4"
+            />
+            <div>
+              <p class="font-bold text-gray-800">Ismail Ahmadi</p>
+              <p class="text-gray-600">CEO, Perusahaan ABC</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-600 mb-6">
+            "Layanan pelanggan yang luar biasa dan fitur yang sangat berguna.
+            Saya sangat puas!"
+          </p>
+          <div class="flex items-center">
+            <img
+              src="img/ghani.png"
+              width="80px"
+              alt="Pengguna Dua"
+              class="rounded-full mr-4"
+            />
+            <div>
+              <p class="font-bold text-gray-800">Ghani Husna</p>
+              <p class="text-gray-600">Manajer, Startup XYZ</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-600 mb-6">
+            "Saya telah mencoba banyak produk, tapi yang ini benar-benar bagus.
+            Terima kasih!"
+          </p>
+          <div class="flex items-center">
+            <img
+              src="img/ahsan.png"
+              width="80px"
+              alt="Pengguna Tiga"
+              class="rounded-full mr-4"
+            />
+            <div>
+              <p class="font-bold text-gray-800">Ahsani Taqwim</p>
+              <p class="text-gray-600">Freelancer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-6xl mx-auto text-center px-6 lg:px-8">
+        <div class="mb-8 flex justify-center space-x-6">
+          <a href="#" class="hover:text-blue-400 transition text-2xl">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="hover:text-blue-400 transition text-2xl">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="hover:text-blue-400 transition text-2xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p class="text-gray-400">
+          &copy; 2024 Sunny Corp. Hak cipta dilindungi undang-undang.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
